@@ -1,0 +1,10 @@
+1. Papers Published by student (PPP.jsx)
+2. Coding profiles (coding.jsx)
+3. Patents by student(PPP.jsx)
+4. ALumini connect (alumini.jsx)=> connect.jsx
+5. Achievements by student (Profile)
+6. view all data in tables (viewData.jsx)=>admins
+7. Graphical representation (dasboard)
+8. Projects of a student (PPP.jsx)
+9. Profile of student(linkedin twitter and contact no education) 
+10. Clg connect=> (same branch)=> clgcnct.jsx=>connect.jsx
