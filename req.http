@@ -1,0 +1,105 @@
+GET http://localhost:5001/scrape
+
+
+### Get all students
+GET http://localhost:5001/student-api/students
+Content-Type: application/json
+
+### Get a specific student by ID
+GET http://localhost:5001/student-api/students/6808c05d2867af243a518d27
+Content-Type: application/json
+
+
+### Create a new student
+POST http://localhost:5001/student-api/students
+Content-Type: application/json
+
+{
+  "name": "KAVYA",
+  "rollNumber": "23071A05H7",
+  "email": "KAVYA@gmail.com",
+  "contact": "9876778924",
+  "branch": "CSE",
+  "section": "B",
+  "yearOfAdmission": "2023",
+  "yearOfGraduation": "2027",
+  "linkedin": "https://www.linkedin.com/in/kavya",
+  "twitter": "https://twitter.com/kavya",
+  "codingProfiles": {
+    "leetcode": "https://leetcode.com/kavya",
+    "github": "https://github.com/kavya",
+    "codeforces": "https://codeforces.com/profile/kavyaa",
+    "codechef": "https://www.codechef.com/users/kavya",
+    "gfg": "https://auth.geeksforgeeks.org/user/kavya"
+  }
+}
+
+### Update a student by ID
+PUT http://localhost:5001/student-api/students/6808c05d2867af243a518d27
+Content-Type: application/json
+
+{
+  "yearOfAdmission":"2023",
+  "linkedin": "https://www.linkedin.com/in/kavya-updated"
+}
+
+### Delete a student
+DELETE http://localhost:5001/student-api/students/6808c05d2867af243a518d27
+Content-Type: application/json
+
+
+
+### ✅ Get All Projects
+GET http://localhost:5001/student-api/projects
+Content-Type: application/json
+
+### ✅ Get a Specific Project by ID
+GET http://localhost:5001/student-api/projects/67f73d1a5dc1b8c89ddd26e9
+Content-Type: application/json
+
+### ✅ Create a New Project
+POST http://localhost:5001/student-api/projects
+Content-Type: application/json
+
+{
+  "id": "3",
+  "title": "ROBOTS",
+  "description": "Machine"
+}
+
+### ✅ Get All Patents
+GET http://localhost:5001/student-api/patents
+Content-Type: application/json
+
+### ✅ Get a Specific Patent by ID
+GET http://localhost:5001/student-api/patents/67eebefec571cf1d3ac43bd0
+Content-Type: application/json
+
+### ✅ Create a New Patent
+POST http://localhost:5001/student-api/patents
+Content-Type: application/json
+
+{
+  "id" : "2",
+  "title": "Blockchain",
+  "description": "A secure voting system using blockchain technology."
+}
+
+### ✅ Get All Publications
+GET http://localhost:5001/student-api/publications
+Content-Type: application/json
+
+### ✅ Get a Specific Publication by ID
+GET http://localhost:5001/student-api/publications/67fa9ee7f5fb92174d28e633
+Content-Type: application/json
+
+### ✅ Create a New Publication
+POST http://localhost:5001/student-api/publications
+Content-Type: application/json
+
+{
+  "id" : "2",
+  "title": "New publication",
+  "description": "sample learning applications in medical diagnosis.",
+  "authors": ["Dr. Emily Johnson", "Mark Lee"]
+}
